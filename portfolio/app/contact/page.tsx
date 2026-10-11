@@ -15,6 +15,13 @@ export default function Contact() {
           required
           className="rounded border border-green-500/40 bg-black/40 px-4 py-2 placeholder-zinc-500 focus:border-green-400 focus:outline-none"
         />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          className="rounded border border-green-500/40 bg-black/40 px-4 py-2 placeholder-zinc-500 focus:border-green-400 focus:outline-none"
+        />
       </form>
     </main>
   );
