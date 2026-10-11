@@ -9,6 +9,14 @@ export default function Home() {
       </p>
       <div className="mt-4 flex gap-6 text-sm">
         <a
+          href="https://www.linkedin.com/in/adnan-alsheikh-945666387"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-green-400 hover:underline"
+        >
+          LinkedIn
+        </a>
+        <a
           href="https://github.com/aalsheikh1"
           target="_blank"
           rel="noopener noreferrer"
