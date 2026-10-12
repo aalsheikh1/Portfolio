@@ -12,6 +12,19 @@ const jobs = [
       "Manage Medicare/Medicaid documentation, including consent forms, ABNs, and compliance paperwork.",
     ],
   },
+  {
+    title: "Registrar",
+    company: "Corewell Hospital",
+    dates: "01/2024 – 10/2024",
+    location: "Royal Oak, United States",
+    bullets: [
+      "Preceptor to new team members",
+      "Facilitated scheduling and inputting accurate patient data into EPIC software",
+      "Collaborated with team members to maintain or exceed the Corewell Health Customer Service Standards",
+      "Demonstrated expertise in Microsoft 365 applications to streamline administrative tasks and enhance workplace productivity",
+      "Obtain information required to build a comprehensive patient electronic medical record (EMR) profile that includes personal demographics and billing information",
+    ],
+  },
 ];
 
 export default function Experience() {
