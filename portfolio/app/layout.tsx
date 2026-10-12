@@ -26,6 +26,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <nav className="flex justify-center gap-6 p-4 text-sm">
           <Link href="/">About</Link>
+          <Link href="/experience">Experience</Link>
+          <Link href="/education">Education</Link>
           <Link href="/contact">Contact</Link>
         </nav>
         {children}
