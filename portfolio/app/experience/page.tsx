@@ -53,6 +53,7 @@ export default function Experience() {
           </ul>
         </section>
       ))}
+      <h2 className="mt-6 text-2xl font-semibold">Projects</h2>
     </main>
   );
 }
