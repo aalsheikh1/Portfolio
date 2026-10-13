@@ -27,6 +27,20 @@ const jobs = [
   },
 ];
 
+const projects = [
+  {
+    name: "Personal Portfolio Website",
+    dates: "10/2026 – Present",
+    link: "https://github.com/aalsheikh1/Portfolio",
+    bullets: [
+      "Built a responsive personal portfolio using Next.js, TypeScript, and CSS",
+      "Managed source control with Git and GitHub, using a feature branch and pull request workflow with incremental commits",
+      "Applied secure development practices: client-side input validation on the contact form, API keys stored in environment files kept out of version control, and external links protected with noopener noreferrer",
+      "Designed a mobile-friendly, cybersecurity-themed UI with reusable components",
+    ],
+  },
+];
+
 export default function Experience() {
   return (
     <main className="flex flex-1 flex-col items-center gap-6 px-4 py-12">
@@ -48,6 +62,34 @@ export default function Experience() {
           </div>
           <ul className="mt-4 list-disc space-y-2 pl-5 text-zinc-400">
             {job.bullets.map((bullet) => (
+              <li key={bullet}>{bullet}</li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      <h2 className="mt-6 text-2xl font-semibold">Projects</h2>
+      {projects.map((project) => (
+        <section
+          key={project.name}
+          className="w-full max-w-3xl rounded border border-green-500/40 bg-black/40 p-6"
+        >
+          <div className="flex flex-col justify-between gap-1 sm:flex-row">
+            <div>
+              <span className="font-semibold">{project.name}</span>
+              {" · "}
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-green-400 hover:underline"
+              >
+                GitHub
+              </a>
+            </div>
+            <div className="text-sm text-green-400">{project.dates}</div>
+          </div>
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-zinc-400">
+            {project.bullets.map((bullet) => (
               <li key={bullet}>{bullet}</li>
             ))}
           </ul>
