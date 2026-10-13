@@ -30,6 +30,12 @@ export default function Contact() {
           required
           className="rounded border border-green-500/40 bg-black/40 px-4 py-2 placeholder-zinc-500 focus:border-green-400 focus:outline-none"
         />
+        <button
+          type="submit"
+          className="rounded bg-green-500 px-4 py-2 font-semibold text-black hover:bg-green-400"
+        >
+          Send
+        </button>
       </form>
     </main>
   );
