@@ -27,11 +27,11 @@ const languages = ["English", "Arabic"];
 
 function Tags({ items }: { items: string[] }) {
   return (
-    <ul className="flex max-w-3xl flex-wrap justify-center gap-3">
+    <ul className="flex max-w-2xl flex-wrap justify-center gap-2">
       {items.map((item) => (
         <li
           key={item}
-          className="rounded-full border border-green-500/40 bg-black/40 px-4 py-1 text-sm text-green-400"
+          className="rounded-full bg-green-400/90 px-2.5 py-0.5 text-xs font-medium text-black transition hover:bg-green-300 hover:shadow-md hover:shadow-green-400/50"
         >
           {item}
         </li>
