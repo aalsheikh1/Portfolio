@@ -1,41 +1,59 @@
 "use client";
 
+const field =
+  "w-full rounded-xl border border-green-500/30 bg-black/40 px-3 py-2 text-sm placeholder-zinc-500 focus:border-green-400 focus:outline-none";
+
 export default function Contact() {
   return (
-    <main className="flex flex-1 flex-col items-center justify-center gap-6">
-      <h1 className="text-4xl font-semibold">Contact</h1>
+    <main className="flex flex-1 items-center justify-center px-4 py-12">
       <form
-        className="flex w-full max-w-md flex-col gap-4 px-4"
+        className="flex w-full max-w-lg flex-col gap-3 rounded-3xl border border-green-500/30 bg-green-500/5 p-6 shadow-lg shadow-green-500/10 backdrop-blur-sm"
         onSubmit={(e) => e.preventDefault()}
       >
-        <input
-          type="text"
-          name="name"
-          placeholder="Full Name"
-          required
-          className="rounded border border-green-500/40 bg-black/40 px-4 py-2 placeholder-zinc-500 focus:border-green-400 focus:outline-none"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-          className="rounded border border-green-500/40 bg-black/40 px-4 py-2 placeholder-zinc-500 focus:border-green-400 focus:outline-none"
-        />
+        <h1 className="mb-2 text-center text-2xl font-semibold">
+          Get in touch
+        </h1>
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+            className={field}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+            className={field}
+          />
+        </div>
         <textarea
           name="message"
           placeholder="Message"
-          rows={5}
+          rows={4}
           maxLength={2000}
           required
-          className="rounded border border-green-500/40 bg-black/40 px-4 py-2 placeholder-zinc-500 focus:border-green-400 focus:outline-none"
+          className={field}
         />
         <button
           type="submit"
-          className="rounded bg-green-500 px-4 py-2 font-semibold text-black hover:bg-green-400"
+          className="self-end rounded-full bg-green-500 px-5 py-1.5 text-sm font-semibold text-black hover:bg-green-400"
         >
-          Send
+          Send →
         </button>
+        <p className="mt-2 text-center text-sm text-zinc-400">
+          or connect on{" "}
+          <a
+            href="https://www.linkedin.com/in/adnan-alsheikh-945666387"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-400 hover:underline"
+          >
+            LinkedIn
+          </a>
+        </p>
       </form>
     </main>
   );
