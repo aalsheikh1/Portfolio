@@ -43,24 +43,24 @@ const projects = [
 
 export default function Experience() {
   return (
-    <main className="flex flex-1 flex-col items-center gap-6 px-4 py-12">
+    <main className="flex flex-1 flex-col items-center gap-4 px-4 py-12">
       <h1 className="text-4xl font-semibold">Experience</h1>
       {jobs.map((job) => (
         <section
           key={job.company + job.dates}
-          className="w-full max-w-3xl rounded border border-green-500/40 bg-black/40 p-6"
+          className="w-full max-w-2xl rounded-3xl border border-green-500/30 bg-green-500/5 px-6 py-4 shadow-lg shadow-green-500/10 backdrop-blur-sm transition hover:border-green-400/60"
         >
           <div className="flex flex-col justify-between gap-1 sm:flex-row">
             <div>
               <span className="font-semibold">{job.title}</span>,{" "}
               <span className="italic">{job.company}</span>
             </div>
-            <div className="text-sm text-green-400 sm:text-right">
+            <div className="text-xs text-green-400 sm:text-right">
               <div>{job.dates}</div>
               <div>{job.location}</div>
             </div>
           </div>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-zinc-400">
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-400">
             {job.bullets.map((bullet) => (
               <li key={bullet}>{bullet}</li>
             ))}
@@ -71,7 +71,7 @@ export default function Experience() {
       {projects.map((project) => (
         <section
           key={project.name}
-          className="w-full max-w-3xl rounded border border-green-500/40 bg-black/40 p-6"
+          className="w-full max-w-2xl rounded-3xl border border-green-500/30 bg-green-500/5 px-6 py-4 shadow-lg shadow-green-500/10 backdrop-blur-sm transition hover:border-green-400/60"
         >
           <div className="flex flex-col justify-between gap-1 sm:flex-row">
             <div>
@@ -86,9 +86,9 @@ export default function Experience() {
                 GitHub
               </a>
             </div>
-            <div className="text-sm text-green-400">{project.dates}</div>
+            <div className="text-xs text-green-400">{project.dates}</div>
           </div>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-zinc-400">
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-400">
             {project.bullets.map((bullet) => (
               <li key={bullet}>{bullet}</li>
             ))}
