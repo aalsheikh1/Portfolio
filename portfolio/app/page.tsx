@@ -14,6 +14,13 @@ const skills = [
   "MIHealth",
   "Priority Health",
   "Data Entry",
+  "Next.js",
+  "React",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "Git",
+  "GitHub",
 ];
 
 const languages = ["English", "Arabic"];
