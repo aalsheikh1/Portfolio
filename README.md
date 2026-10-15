@@ -21,11 +21,11 @@ My personal website. I'm an information assurance graduate transitioning into �
 
 ## 🔒 Security
 
-- 🧱 Security headers: `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`, `Strict-Transport-Security`
+- 🧱 Security headers: `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Cross-Origin-Opener-Policy`, `Permissions-Policy`, `Strict-Transport-Security`
 - 🙈 `X-Powered-By` header hidden
 - 🔗 External links use `noopener noreferrer`
 - 🔑 Secrets kept in `.env` files, never committed
-- ⏳ Content-Security-Policy coming soon
+- 🛡️ **Strict Content-Security-Policy**: a fresh nonce on every request; only trusted scripts run, which blocks XSS
 
 ## 🧰 Built With
 
