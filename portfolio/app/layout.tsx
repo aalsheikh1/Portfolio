@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { connection } from "next/server";
 import "./globals.css";
 import Nav from "./nav";
 
@@ -17,7 +18,9 @@ export const metadata: Metadata = {
   title: "Adnan Alsheikh",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  // Render on every request so each page gets a fresh CSP nonce (see proxy.ts)
+  await connection();
   return (
     <html
       lang="en"
