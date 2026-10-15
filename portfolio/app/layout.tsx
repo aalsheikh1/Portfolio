@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import { connection } from "next/server";
 import "./globals.css";
+import Nav from "./nav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,19 +18,16 @@ export const metadata: Metadata = {
   title: "Adnan Alsheikh",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  // Render on every request so each page gets a fresh CSP nonce (see proxy.ts)
+  await connection();
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <nav className="flex justify-center gap-6 p-4 text-sm">
-          <Link href="/">About</Link>
-          <Link href="/experience">Experience</Link>
-          <Link href="/education">Education</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
+        <Nav />
         {children}
       </body>
     </html>
