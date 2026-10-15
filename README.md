@@ -6,12 +6,12 @@ My personal website. I'm an information assurance graduate transitioning into �
 
 ## ✨ Features
 
-- 🏠 **About page**: name, title, short intro, LinkedIn & GitHub links, skill tags, and languages
+- 🏠 **About page**: name, title, short intro, LinkedIn & GitHub links, skill pills (incl. Next.js, React, TypeScript, HTML, CSS, Git), and languages
 - 🧭 **Top menu**: About · Experience · Education · Contact
-- 💼 **Experience**: two roles shown as cards with dates and locations, plus a 🧪 Projects section (this portfolio site)
-- 🎓 **Education**: two degrees + certifications (CompTIA Security+ in progress)
-- 🌐 **Cyber-themed background**: dark mode with a green grid and glow
-- 📬 **Contact form**
+- 💼 **Experience**: two roles shown as compact glowing bubbles with dates and locations, plus a 🧪 Projects section (this portfolio site)
+- 🎓 **Education**: two degrees shown as ID-badge cards + certifications (CompTIA Security+ in progress)
+- 🌐 **Cyber-themed background**: dark mode with a soft green & pink aurora glow
+- 📬 **Contact form**: compact glass card + LinkedIn link
   - 👤 Full Name (required)
   - 📧 Email (required, must be valid)
   - 💬 Message (required, up to 2000 characters)
@@ -21,4 +21,4 @@ My personal website. I'm an information assurance graduate transitioning into �
 
 - ⚛️ [Next.js](https://nextjs.org)
 - 🔷 TypeScript
-- 🎨 Tailwind CSS
+- 🎨 CSS
