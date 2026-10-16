@@ -1,3 +1,5 @@
+import { WalkingCat } from "./cat";
+
 const skills = [
   "Linux",
   "SQL",
@@ -71,6 +73,7 @@ export default function Home() {
       <Tags items={skills} />
       <h2 className="mt-6 mb-2 text-2xl font-semibold">Languages</h2>
       <Tags items={languages} />
+      <WalkingCat />
     </main>
   );
 }
