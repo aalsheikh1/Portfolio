@@ -35,7 +35,8 @@ const projects = [
     bullets: [
       "Built a responsive personal portfolio using Next.js, TypeScript, and CSS",
       "Managed source control with Git and GitHub, using a feature branch and pull request workflow with incremental commits",
-      "Applied secure development practices: client-side input validation on the contact form, API keys stored in environment files kept out of version control, and external links protected with noopener noreferrer",
+      "Hardened the site against common web attacks with a strict, nonce-based Content-Security-Policy and security headers (HSTS, X-Frame-Options, COOP, Referrer-Policy, Permissions-Policy), aligned with the OWASP Secure Headers Project",
+      "Reduced attack surface by hiding server details (X-Powered-By), protecting external links with noopener noreferrer, and keeping secrets in environment files out of version control",
       "Designed a mobile-friendly, cybersecurity-themed UI with reusable components",
     ],
   },
