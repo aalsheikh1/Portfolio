@@ -5,11 +5,11 @@ const jobs = [
     dates: "10/2024 – Present",
     location: "Dearborn, United States",
     bullets: [
-      "Actively engaged with CHAMPS, NAVINET, and other payer websites to verify insurance eligibility, process claims, and resolve discrepancies, ensuring compliance with billing requirements",
-      "Developed expertise in hospital billing processes, ensuring that patient accounts were accurately handled and claims processed in a timely manner",
-      "Managed insurance collections and worked with third-party payers to resolve denied claims and billing issues, improving the accuracy of reimbursement and minimizing financial discrepancies",
-      "Maintained confidentiality of patient information and adhered to all HIPAA regulations and Corewell Health policies",
-      "Manage Medicare/Medicaid documentation, including consent forms, ABNs, and compliance paperwork.",
+      "Engage with CHAMPS, NAVINET, and other payer websites to verify insurance eligibility, process claims, and resolve discrepancies, ensuring compliance with billing requirements",
+      "Apply expertise in hospital billing processes to ensure patient accounts are accurately handled and claims are processed in a timely manner",
+      "Manage insurance collections and work with third-party payers to resolve denied claims and billing issues, improving the accuracy of reimbursement and minimizing financial discrepancies",
+      "Maintain confidentiality of patient information and adhere to all HIPAA regulations and Corewell Health policies",
+      "Manage Medicare/Medicaid documentation, including consent forms, ABNs, and compliance paperwork",
     ],
   },
   {
@@ -18,11 +18,11 @@ const jobs = [
     dates: "01/2024 – 10/2024",
     location: "Royal Oak, United States",
     bullets: [
-      "Preceptor to new team members",
+      "Served as a preceptor to new team members",
       "Facilitated scheduling and inputting accurate patient data into EPIC software",
       "Collaborated with team members to maintain or exceed the Corewell Health Customer Service Standards",
       "Demonstrated expertise in Microsoft 365 applications to streamline administrative tasks and enhance workplace productivity",
-      "Obtain information required to build a comprehensive patient electronic medical record (EMR) profile that includes personal demographics and billing information",
+      "Obtained information required to build a comprehensive patient electronic medical record (EMR) profile that includes personal demographics and billing information",
     ],
   },
 ];
