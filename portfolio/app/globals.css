@@ -23,61 +23,39 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Cat + yarn scene (app/cat.tsx), one 25s loop:
-   wander the screen -> spot the yarn -> pounce -> bat it and chase it off. */
-@keyframes cat-path {
-  0% { transform: translate(-10vw, 82vh); }
-  16% { transform: translate(40vw, 82vh); }
-  28% { transform: translate(80vw, 50vh); }
-  40% { transform: translate(75vw, 8vh); }
-  52% { transform: translate(55vw, 25vh); }
-  62%, 67% { transform: translate(45vw, 82vh); }
-  68.5% { transform: translate(39vw, 70vh); }
-  70%, 74% { transform: translate(33vw, 82vh); }
-  78%, 82% { transform: translate(19vw, 82vh); }
-  86%, 90% { transform: translate(9vw, 82vh); }
-  100% { transform: translate(-12vw, 82vh); }
-}
-@keyframes cat-face {
-  0%, 27.9% { transform: scaleX(1); }
-  28%, 100% { transform: scaleX(-1); }
+/* Cat + yarn (app/cat.tsx). Movement is random and driven by the script;
+   these are just the body animations. */
+.cat-root:not([data-ready]) { opacity: 0; }
+@keyframes cat-leg {
+  0%, 100% { transform: rotate(25deg); }
+  50% { transform: rotate(-25deg); }
 }
 @keyframes cat-bob {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
+  50% { transform: translateY(-2px); }
 }
 @keyframes cat-tail {
   0%, 100% { transform: rotate(0deg); }
   50% { transform: rotate(14deg); }
 }
-@keyframes cat-yarn {
-  0% { transform: translate(28vw, 86vh); opacity: 0; }
-  5%, 72% { transform: translate(28vw, 86vh); opacity: 1; }
-  76%, 80% { transform: translate(15vw, 86vh); }
-  84%, 88% { transform: translate(5vw, 86vh); }
-  97% { transform: translate(-10vw, 86vh); opacity: 1; }
-  100% { transform: translate(-10vw, 86vh); opacity: 0; }
+@keyframes cat-pounce {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(-22px); }
+  100% { transform: translateY(0); }
 }
-@keyframes cat-yarn-spin {
-  0%, 72% { transform: rotate(0deg); }
-  76%, 80% { transform: rotate(-720deg); }
-  84%, 88% { transform: rotate(-1260deg); }
-  97%, 100% { transform: rotate(-2400deg); }
+.cat-leg {
+  transform-box: fill-box;
+  transform-origin: 50% 0;
 }
-.cat-path { animation: cat-path 25s linear infinite; }
-.cat-face { animation: cat-face 25s linear infinite; }
-.cat-bob { animation: cat-bob 0.35s ease-in-out infinite; }
+.cat-root[data-moving] .cat-leg { animation: cat-leg 0.35s ease-in-out infinite; }
+.cat-root[data-moving] .cat-leg-alt { animation-delay: -0.175s; }
+.cat-root[data-moving] .cat-bob { animation: cat-bob 0.35s ease-in-out infinite; }
+.cat-root[data-action="pounce"] .cat-bob { animation: cat-pounce 0.5s ease-out; }
 .cat-tail {
   transform-box: fill-box;
   transform-origin: 100% 100%;
   animation: cat-tail 1s ease-in-out infinite;
 }
-.cat-yarn { animation: cat-yarn 25s linear infinite; }
-.cat-yarn-spin { animation: cat-yarn-spin 25s linear infinite; }
 @media (prefers-reduced-motion: reduce) {
-  .cat-path, .cat-face, .cat-bob, .cat-tail, .cat-yarn, .cat-yarn-spin {
-    animation: none;
-  }
-  .cat-path { transform: translate(4vw, 82vh); }
-  .cat-yarn { transform: translate(12vw, 86vh); }
+  .cat-tail { animation: none; }
 }

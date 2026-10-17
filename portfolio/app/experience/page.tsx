@@ -5,11 +5,11 @@ const jobs = [
     dates: "10/2024 – Present",
     location: "Dearborn, United States",
     bullets: [
-      "Actively engaged with CHAMPS, NAVINET, and other payer websites to verify insurance eligibility, process claims, and resolve discrepancies, ensuring compliance with billing requirements",
-      "Developed expertise in hospital billing processes, ensuring that patient accounts were accurately handled and claims processed in a timely manner",
-      "Managed insurance collections and worked with third-party payers to resolve denied claims and billing issues, improving the accuracy of reimbursement and minimizing financial discrepancies",
-      "Maintained confidentiality of patient information and adhered to all HIPAA regulations and Corewell Health policies",
-      "Manage Medicare/Medicaid documentation, including consent forms, ABNs, and compliance paperwork.",
+      "Protect the confidentiality of sensitive patient information (PHI) in line with HIPAA regulations and Corewell Health privacy policies",
+      "Maintain regulatory compliance by managing Medicare/Medicaid documentation, including consent forms and Advance Beneficiary Notices (ABNs)",
+      "Engage with CHAMPS, NAVINET, and other payer websites to verify insurance eligibility, process claims, and resolve discrepancies, ensuring compliance with billing requirements",
+      "Apply expertise in hospital billing processes to ensure patient accounts are accurately handled and claims are processed in a timely manner",
+      "Manage insurance collections and work with third-party payers to resolve denied claims and billing issues, improving the accuracy of reimbursement and minimizing financial discrepancies",
     ],
   },
   {
@@ -18,11 +18,11 @@ const jobs = [
     dates: "01/2024 – 10/2024",
     location: "Royal Oak, United States",
     bullets: [
-      "Preceptor to new team members",
-      "Facilitated scheduling and inputting accurate patient data into EPIC software",
+      "Handled sensitive patient data, including personal demographics and billing information, to build accurate electronic medical record (EMR) profiles",
+      "Ensured data integrity by accurately entering patient data into EPIC and managing scheduling",
+      "Served as a preceptor to new team members",
       "Collaborated with team members to maintain or exceed the Corewell Health Customer Service Standards",
       "Demonstrated expertise in Microsoft 365 applications to streamline administrative tasks and enhance workplace productivity",
-      "Obtain information required to build a comprehensive patient electronic medical record (EMR) profile that includes personal demographics and billing information",
     ],
   },
 ];
@@ -35,7 +35,8 @@ const projects = [
     bullets: [
       "Built a responsive personal portfolio using Next.js, TypeScript, and CSS",
       "Managed source control with Git and GitHub, using a feature branch and pull request workflow with incremental commits",
-      "Applied secure development practices: client-side input validation on the contact form, API keys stored in environment files kept out of version control, and external links protected with noopener noreferrer",
+      "Hardened the site against common web attacks with a strict, nonce-based Content-Security-Policy and security headers (HSTS, X-Frame-Options, COOP, Referrer-Policy, Permissions-Policy), aligned with the OWASP Secure Headers Project",
+      "Reduced attack surface by hiding server details (X-Powered-By), protecting external links with noopener noreferrer, and keeping secrets in environment files out of version control",
       "Designed a mobile-friendly, cybersecurity-themed UI with reusable components",
     ],
   },
