@@ -5,11 +5,11 @@ const jobs = [
     dates: "10/2024 – Present",
     location: "Dearborn, United States",
     bullets: [
+      "Protect the confidentiality of sensitive patient information (PHI) in line with HIPAA regulations and Corewell Health privacy policies",
+      "Maintain regulatory compliance by managing Medicare/Medicaid documentation, including consent forms and Advance Beneficiary Notices (ABNs)",
       "Engage with CHAMPS, NAVINET, and other payer websites to verify insurance eligibility, process claims, and resolve discrepancies, ensuring compliance with billing requirements",
       "Apply expertise in hospital billing processes to ensure patient accounts are accurately handled and claims are processed in a timely manner",
       "Manage insurance collections and work with third-party payers to resolve denied claims and billing issues, improving the accuracy of reimbursement and minimizing financial discrepancies",
-      "Maintain confidentiality of patient information and adhere to all HIPAA regulations and Corewell Health policies",
-      "Manage Medicare/Medicaid documentation, including consent forms, ABNs, and compliance paperwork",
     ],
   },
   {
@@ -18,11 +18,11 @@ const jobs = [
     dates: "01/2024 – 10/2024",
     location: "Royal Oak, United States",
     bullets: [
+      "Handled sensitive patient data, including personal demographics and billing information, to build accurate electronic medical record (EMR) profiles",
+      "Ensured data integrity by accurately entering patient data into EPIC and managing scheduling",
       "Served as a preceptor to new team members",
-      "Facilitated scheduling and inputting accurate patient data into EPIC software",
       "Collaborated with team members to maintain or exceed the Corewell Health Customer Service Standards",
       "Demonstrated expertise in Microsoft 365 applications to streamline administrative tasks and enhance workplace productivity",
-      "Obtained information required to build a comprehensive patient electronic medical record (EMR) profile that includes personal demographics and billing information",
     ],
   },
 ];
