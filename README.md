@@ -11,6 +11,7 @@ My personal website. I'm an information assurance graduate transitioning into �
 - 💼 **Experience**: two roles shown as compact glowing bubbles with dates and locations, plus a 🧪 Projects section (this portfolio site)
 - 🎓 **Education**: two degrees shown as ID-badge cards + certifications (CompTIA Security+ in progress)
 - 🌐 **Cyber-themed background**: dark mode with a soft green & pink aurora glow
+- 🐱 **Animated cat**: a cute white cat wanders the About page at random, sits, and plays with a yarn ball (respects reduced-motion settings and works with the strict CSP)
 - 📬 **Contact form**: compact glass card + LinkedIn link
   - 👤 Full Name (required)
   - 📧 Email (required, must be valid)
