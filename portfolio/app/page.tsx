@@ -27,6 +27,14 @@ const skills = [
 
 const languages = ["English", "Arabic"];
 
+const hobbies = [
+  "Swimming",
+  "Traveling",
+  "Bodybuilding",
+  "picoCTF",
+  "Hack The Box",
+];
+
 function Tags({ items }: { items: string[] }) {
   return (
     <ul className="flex max-w-2xl flex-wrap justify-center gap-2">
@@ -73,6 +81,8 @@ export default function Home() {
       <Tags items={skills} />
       <h2 className="mt-6 mb-2 text-2xl font-semibold">Languages</h2>
       <Tags items={languages} />
+      <h2 className="mt-6 mb-2 text-2xl font-semibold">Hobbies</h2>
+      <Tags items={hobbies} />
       <WalkingCat />
     </main>
   );
